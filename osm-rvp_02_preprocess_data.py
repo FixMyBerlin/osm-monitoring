@@ -11,12 +11,12 @@ import logging
 
 
 #Paths
-path_osm = "r:/PROZ_GL_Akquisition_VS/mFund/RadnetzPlanungOSM/Data/OSMplus/"
-path_preproc = "r:/PROZ_GL_Akquisition_VS/mFund/RadnetzPlanungOSM/Data/preprocessedPlus/"
-file_grenzen = "r:/PROZ_GL_Akquisition_VS/mFund/RadnetzPlanungOSM/Data/GemeindegrenzenATKIS_BasisDLM/BietigheimBissingen.shp"
+path_osm = "r:/[PFAD ZUM ORDNER]/RadnetzPlanungOSM/Data/OSMplus/"
+path_preproc = "r:/[PFAD ZUM ORDNER]/RadnetzPlanungOSM/Data/preprocessedPlus/"
+file_grenzen = "r:/[PFAD ZUM ORDNER]/RadnetzPlanungOSM/Data/GemeindegrenzenATKIS_BasisDLM/BietigheimBissingen.shp"
 
 #Logging
-logging.basicConfig(filename='c:/Users/fc/workdir_op/osmrvp/osm-rvp_02_preprocess_data.log', filemode='a',level = logging.INFO,format='%(name)s - %(levelname)s - %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')#, format='%(name)s - %(levelname)s - %(message)s'
+logging.basicConfig(filename='C:/OSM-RVP/Python/osm-rvp_02_preprocess_data.log', filemode='a',level = logging.INFO,format='%(name)s - %(levelname)s - %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')#, format='%(name)s - %(levelname)s - %(message)s'
 logging.StreamHandler(sys.stdout)
 
 logging.info('Start with "osm_rvp_02_preprocess_data"')

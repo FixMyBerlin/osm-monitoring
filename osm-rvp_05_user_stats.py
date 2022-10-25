@@ -14,14 +14,14 @@ import codecs
 import logging
 
 #Logging
-logging.basicConfig(filename='c:/Users/fc/workdir_op/osmrvp/osm-rvp_05_user_stats.log', filemode='a',level = logging.INFO,format='%(name)s - %(levelname)s - %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')#, format='%(name)s - %(levelname)s - %(message)s'
+logging.basicConfig(filename='C:/OSM-RVP/Python/osm-rvp_05_user_stats.log', filemode='a',level = logging.INFO,format='%(name)s - %(levelname)s - %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')#, format='%(name)s - %(levelname)s - %(message)s'
 logging.StreamHandler(sys.stdout)
 
 logging.info('Start with "osm_rvp_05_user_stats"')
 
 
-file_in = "r:/PROZ_GL_Akquisition_VS/mFund/RadnetzPlanungOSM/Data/preprocessedPlus/osm_preproc_way.gpkg"
-file_out = "r:/PROZ_GL_Akquisition_VS/mFund/RadnetzPlanungOSM/Data/stats/stats_users.csv"
+file_in = "r:/[PFAD ZUM ORDNER]/RadnetzPlanungOSM/Data/preprocessedPlus/osm_preproc_way.gpkg"
+file_out = "r:/[PFAD ZUM ORDNER]/RadnetzPlanungOSM/Data/stats/stats_users.csv"
 
 
 

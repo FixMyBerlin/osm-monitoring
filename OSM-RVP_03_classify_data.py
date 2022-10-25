@@ -11,7 +11,7 @@ import logging
 
 
 #Logging
-logging.basicConfig(filename='c:/Users/fc/workdir_op/osmrvp/osm-rvp_03_classify_data.log', filemode='a',level = logging.INFO,format='%(name)s - %(levelname)s - %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')#, format='%(name)s - %(levelname)s - %(message)s'
+logging.basicConfig(filename='C:/OSM-RVP/Python/osm-rvp_03_classify_data.log', filemode='a',level = logging.INFO,format='%(name)s - %(levelname)s - %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')#, format='%(name)s - %(levelname)s - %(message)s'
 logging.StreamHandler(sys.stdout)
 
 logging.info('Start with "osm_rvp_03_classify_data"')
@@ -247,7 +247,7 @@ for topic in topics:
 
     dates = date_range(start, end)
 
-    file = "r:/PROZ_GL_Akquisition_VS/mFund/RadnetzPlanungOSM/Data/preprocessedPlus/osm_preproc_"+topic+".gpkg"
+    file = "r:/[PFAD ZUM ORDNER]/RadnetzPlanungOSM/Data/preprocessedPlus/osm_preproc_"+topic+".gpkg"
 
     stats = pd.DataFrame(columns = ['date','class','length','nelements'])
 

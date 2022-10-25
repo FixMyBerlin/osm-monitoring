@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 
 import datetime
+from dateutil.relativedelta import relativedelta
 
 import time, os, sys
 import codecs
@@ -15,12 +16,12 @@ from matplotlib.dates import DateFormatter
 import logging
 
 
-file_stats = 'r:/PROZ_GL_Akquisition_VS/mFund/RadnetzPlanungOSM/Data/stats/stats_way.csv'
-file_plot = 'r:/PROZ_GL_Akquisition_VS/mFund/RadnetzPlanungOSM/Data/stats/stats_way.jpg'
+file_stats = 'r:/[PFAD ZUM ORDNER]/RadnetzPlanungOSM/Data/stats/stats_way.csv'
+file_plot = 'r:/[PFAD ZUM ORDNER]/RadnetzPlanungOSM/Data/stats/stats_way.jpg'
 
 
 #Logging
-logging.basicConfig(filename='c:/Users/fc/workdir_op/osmrvp/osm-rvp_04_make_stats.log', filemode='a',level = logging.INFO,format='%(name)s - %(levelname)s - %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')#, format='%(name)s - %(levelname)s - %(message)s'
+logging.basicConfig(filename='C:/OSM-RVP/Python/osm-rvp_04_make_stats.log', filemode='a',level = logging.INFO,format='%(name)s - %(levelname)s - %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')#, format='%(name)s - %(levelname)s - %(message)s'
 logging.StreamHandler(sys.stdout)
 
 logging.info('Start with "osm_rvp_04_make_stats"')
@@ -83,8 +84,11 @@ axs[1].set_ylabel('Änderung Anzahl Ways')
 # Define the date format
 date_form = DateFormatter("%Y-%m")
 
-axs[0].xaxis.set_major_formatter(date_form)
+datenow = datetime.datetime.now()
+axs[0].xaxis.set_major_formatter(date_form)                                
+axs[0].set_xlim([datenow - relativedelta(years=1), datenow])
 axs[0].xaxis.set_major_locator(mdates.AutoDateLocator(minticks=5, maxticks=7))
+axs[1].set_xlim([datenow - relativedelta(years=1), datenow])
 axs[1].xaxis.set_major_formatter(date_form)
 axs[1].xaxis.set_major_locator(mdates.AutoDateLocator(minticks=5, maxticks=7))
 axs[0].legend(loc='upper left',bbox_to_anchor=(1,1))

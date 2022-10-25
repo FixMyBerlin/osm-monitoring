@@ -7,10 +7,10 @@ import os, sys
 import logging
 
 #Pfad für die heruntergeladenen Daten
-path = "r:/PROZ_GL_Akquisition_VS/mFund/RadnetzPlanungOSM/Data/OSMplus/"
+path = "r:/[PFAD ZUM ORDNER]/RadnetzPlanungOSM/Data/OSMplus/"
 
 #Logging
-logging.basicConfig(filename='c:/Users/fc/workdir_op/osmrvp/osm-rvp_01_query.log', filemode='a',level = logging.INFO,format='%(name)s - %(levelname)s - %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')#, format='%(name)s - %(levelname)s - %(message)s'
+logging.basicConfig(filename='C:/OSM-RVP/Python/osm-rvp_01_query.log', filemode='a',level = logging.INFO,format='%(name)s - %(levelname)s - %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')#, format='%(name)s - %(levelname)s - %(message)s'
 logging.StreamHandler(sys.stdout)
 #logging.debug('This is a debug message')
 #logging.info('This is an info message')
