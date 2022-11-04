@@ -1,0 +1,13 @@
+requests
+overpass
+pandas
+gdal
+fiona
+geopandas
+osm2geojson
+datetime
+openapi-codec
+matplotlib
+rtree
+github
+notebook

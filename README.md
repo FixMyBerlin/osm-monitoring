@@ -1,5 +1,9 @@
 # OSM-Monitoring
 
+Automatische Auswertung von Fahrradinfrastruktur von OpenStreetMap Daten.
+
+## Installation for Windows 
+
 1. Install python in User folder
 Download Python | Python.org: https://www.python.org/downloads/
 Version darf nicht aktueller sein, als die vorhandenen Wheels für GDAL und FIONA (siehe Links unten)
@@ -43,6 +47,12 @@ py -m pip install matplotlib
 py -m pip install rtree
 pip install github
 py -m pip install notebook
+```
+## Installation for Linux
+
+Use `requirements.txt` for installation of all pip packages:
+```sh
+pip install -r requirements.txt
 ```
 
 ## 4. Nutzung der Umgebung:
