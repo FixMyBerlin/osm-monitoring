@@ -65,3 +65,7 @@ Start jupyter notebook:
 ```
 py -m notebook
 ```
+
+# License
+
+This code is licensed under AGPL-3.0 license.
