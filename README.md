@@ -2,6 +2,8 @@
 
 Automatische Auswertung von Fahrradinfrastruktur von OpenStreetMap Daten.
 
+This project is part of radverkehrsatlas.de which is managed at [tarmac-app](https://github.com/FixMyBerlin/tarmac-app). Please use the [tarmac-app repo](https://github.com/FixMyBerlin/tarmac-app) to report issues and learn more about the project.
+
 ## Installation for Windows 
 
 1. Install python in User folder
